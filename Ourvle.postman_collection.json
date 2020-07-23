@@ -1,0 +1,970 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Ourvle",
+		"_postman_id": "e2646409-f814-4310-b923-e9d8cae2fd88",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"url": {
+					"raw": "{{host}}/login/token.php?username={{username}}&password={{password}}&service=moodle_mobile_app",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"login",
+						"token.php"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"equals": true
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"equals": true
+						},
+						{
+							"key": "service",
+							"value": "moodle_mobile_app",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"description": null
+			},
+			"response": [
+				{
+					"id": "a479a2d7-aa51-4362-b319-dea3d83fdece",
+					"name": "login",
+					"originalRequest": {
+						"url": {
+							"raw": "{{host}}/login/token.php?username={{username}}&password={{password}}&service=moodle_mobile_app",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"login",
+								"token.php"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "service",
+									"value": "moodle_mobile_app",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"description": "",
+								"warning": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"name": "accept-ranges",
+							"key": "accept-ranges",
+							"value": "none",
+							"description": ""
+						},
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+							"description": ""
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": ""
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "44",
+							"description": ""
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 18 Feb 2019 21:45:28 GMT",
+							"description": ""
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Mon, 20 Aug 1969 09:23:00 GMT",
+							"description": ""
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": ""
+						},
+						{
+							"name": "last-modified",
+							"key": "last-modified",
+							"value": "Mon, 18 Feb 2019 21:45:28 GMT",
+							"description": ""
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": ""
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache",
+							"description": ""
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/5.5.9-1ubuntu4",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"responseTime": "1807",
+					"body": "{\"token\":\"2dd6174a10cff7444de36e2abd33d853\"}"
+				}
+			]
+		},
+		{
+			"name": "site info",
+			"request": {
+				"url": {
+					"raw": "{{host}}//webservice/rest/server.php?wstoken={{token}}&wsfunction=moodle_webservice_get_siteinfo&moodlewsrestformat=json",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "{{token}}",
+							"equals": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "moodle_webservice_get_siteinfo",
+							"equals": true
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"description": null
+			},
+			"response": [
+				{
+					"id": "0d01d41a-b9da-46a2-ab83-30c8bc9b726d",
+					"name": "site info",
+					"originalRequest": {
+						"url": {
+							"raw": "{{host}}//webservice/rest/server.php?wstoken={{token}}&wsfunction=moodle_webservice_get_siteinfo&moodlewsrestformat=json",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"",
+								"webservice",
+								"rest",
+								"server.php"
+							],
+							"query": [
+								{
+									"key": "wstoken",
+									"value": "{{token}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "wsfunction",
+									"value": "moodle_webservice_get_siteinfo",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "moodlewsrestformat",
+									"value": "json",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"description": "",
+								"warning": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"name": "accept-ranges",
+							"key": "accept-ranges",
+							"value": "none",
+							"description": ""
+						},
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "private, must-revalidate, pre-check=0, post-check=0, max-age=0",
+							"description": ""
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": ""
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "3074",
+							"description": ""
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": ""
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 18 Feb 2019 21:49:03 GMT",
+							"description": ""
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 01 Jan 1970 00:00:00 GMT",
+							"description": ""
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": ""
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": ""
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache",
+							"description": ""
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/5.5.9-1ubuntu4",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"responseTime": "1201",
+					"body": "{\"sitename\":\"Our Virtual Learning Environment\",\"username\":\"620121787\",\"firstname\":\"Shazzam\",\"lastname\":\"Austin\",\"fullname\":\"Shazzam Austin\",\"lang\":\"en\",\"userid\":39476,\"siteurl\":\"https:\\/\\/ourvle.mona.uwi.edu\",\"userpictureurl\":\"https:\\/\\/ourvle.mona.uwi.edu\\/pluginfile.php\\/307832\\/user\\/icon\\/f1\",\"functions\":[{\"name\":\"core_user_add_user_device\",\"version\":\"2014051200.01\"},{\"name\":\"mod_assign_get_user_flags\",\"version\":\"2014051200\"},{\"name\":\"mod_assign_set_user_flags\",\"version\":\"2014051200\"},{\"name\":\"mod_assign_get_user_mappings\",\"version\":\"2014051200\"},{\"name\":\"mod_assign_revert_submissions_to_draft\",\"version\":\"2014051200\"},{\"name\":\"mod_assign_lock_submissions\",\"version\":\"2014051200\"},{\"name\":\"mod_assign_unlock_submissions\",\"version\":\"2014051200\"},{\"name\":\"mod_assign_save_submission\",\"version\":\"2014051200\"},{\"name\":\"mod_assign_submit_for_grading\",\"version\":\"2014051200\"},{\"name\":\"mod_assign_save_grade\",\"version\":\"2014051200\"},{\"name\":\"mod_assign_save_user_extensions\",\"version\":\"2014051200\"},{\"name\":\"mod_assign_reveal_identities\",\"version\":\"2014051200\"},{\"name\":\"mod_forum_get_forums_by_courses\",\"version\":\"2014051200\"},{\"name\":\"moodle_enrol_get_enrolled_users\",\"version\":\"2014051200.01\"},{\"name\":\"moodle_user_get_users_by_id\",\"version\":\"2014051200.01\"},{\"name\":\"core_user_get_users_by_id\",\"version\":\"2014051200.01\"},{\"name\":\"moodle_user_get_users_by_courseid\",\"version\":\"2014051200.01\"},{\"name\":\"moodle_user_get_course_participants_by_id\",\"version\":\"2014051200.01\"},{\"name\":\"core_user_get_course_user_profiles\",\"version\":\"2014051200.01\"},{\"name\":\"core_course_get_contents\",\"version\":\"2014051200.01\"},{\"name\":\"moodle_message_send_instantmessages\",\"version\":\"2014051200.01\"},{\"name\":\"core_message_send_instant_messages\",\"version\":\"2014051200.01\"},{\"name\":\"mod_forum_get_forum_discussions\",\"version\":\"2014051200\"},{\"name\":\"core_grades_get_grades\",\"version\":\"2014051200.01\"},{\"name\":\"mod_assign_get_grades\",\"version\":\"2014051200\"},{\"name\":\"mod_assign_get_assignments\",\"version\":\"2014051200\"},{\"name\":\"moodle_notes_create_notes\",\"version\":\"2014051200.01\"},{\"name\":\"core_notes_create_notes\",\"version\":\"2014051200.01\"},{\"name\":\"moodle_webservice_get_siteinfo\",\"version\":\"2014051200.01\"},{\"name\":\"core_grades_update_grades\",\"version\":\"2014051200.01\"},{\"name\":\"message_airnotifier_is_system_configured\",\"version\":\"2014051200\"},{\"name\":\"message_airnotifier_are_notification_preferences_configured\",\"version\":\"2014051200\"},{\"name\":\"mod_forum_get_forum_discussion_posts\",\"version\":\"2014051200\"},{\"name\":\"core_get_component_strings\",\"version\":\"2014051200.01\"},{\"name\":\"core_webservice_get_site_info\",\"version\":\"2014051200.01\"},{\"name\":\"core_enrol_get_enrolled_users\",\"version\":\"2014051200.01\"},{\"name\":\"moodle_enrol_get_users_courses\",\"version\":\"2014051200.01\"},{\"name\":\"core_enrol_get_users_courses\",\"version\":\"2014051200.01\"},{\"name\":\"core_calendar_get_calendar_events\",\"version\":\"2014051200.01\"},{\"name\":\"mod_assign_get_submissions\",\"version\":\"2014051200\"}],\"downloadfiles\":1,\"uploadfiles\":1,\"release\":\"2.7+ (Build: 20140515)\",\"version\":\"2014051200.01\",\"mobilecssurl\":\"\"}"
+				}
+			]
+		},
+		{
+			"name": "get courses",
+			"request": {
+				"url": {
+					"raw": "{{host}}/webservice/rest/server.php?wstoken={{token}}&wsfunction=core_enrol_get_users_courses&moodlewsrestformat=json&userid={{userid}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "{{token}}",
+							"equals": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_enrol_get_users_courses",
+							"equals": true
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"equals": true
+						},
+						{
+							"key": "userid",
+							"value": "{{userid}}",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"description": null
+			},
+			"response": [
+				{
+					"id": "c0582319-b4bc-4727-a860-ac02f15f7a08",
+					"name": "get courses",
+					"originalRequest": {
+						"url": {
+							"raw": "{{host}}/webservice/rest/server.php?wstoken={{token}}&wsfunction=core_enrol_get_users_courses&moodlewsrestformat=json&userid={{userid}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"webservice",
+								"rest",
+								"server.php"
+							],
+							"query": [
+								{
+									"key": "wstoken",
+									"value": "{{token}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "wsfunction",
+									"value": "core_enrol_get_users_courses",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "moodlewsrestformat",
+									"value": "json",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "userid",
+									"value": "{{userid}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"description": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"name": "accept-ranges",
+							"key": "accept-ranges",
+							"value": "none",
+							"description": ""
+						},
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "private, must-revalidate, pre-check=0, post-check=0, max-age=0",
+							"description": ""
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": ""
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "919",
+							"description": ""
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": ""
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 18 Feb 2019 21:52:21 GMT",
+							"description": ""
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 01 Jan 1970 00:00:00 GMT",
+							"description": ""
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": ""
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": ""
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache",
+							"description": ""
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/5.5.9-1ubuntu4",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"responseTime": "1539",
+					"body": "[{\"id\":607,\"shortname\":\"COMP1161\\/SWEN1001\",\"fullname\":\"Object-oriented Programming\",\"enrolledusercount\":399,\"idnumber\":\"COMP11610\",\"visible\":1},{\"id\":383,\"shortname\":\"COMP1210\",\"fullname\":\"COMP1210: Mathematics for Computing\",\"enrolledusercount\":242,\"idnumber\":\"COMP12100\",\"visible\":1},{\"id\":98,\"shortname\":\"ELET1400\",\"fullname\":\"  Introduction to Electronincs\",\"enrolledusercount\":90,\"idnumber\":\"ELET14000\",\"visible\":1},{\"id\":2785,\"shortname\":\"ECON1000\",\"fullname\":\" Principles of Economics\",\"enrolledusercount\":712,\"idnumber\":\"ECON10000\",\"visible\":1},{\"id\":199,\"shortname\":\"PSYC1000\",\"fullname\":\"Intro. to Psychology - Developmental, Social & Abnormal\",\"enrolledusercount\":388,\"idnumber\":\"PSYC10000\",\"visible\":1},{\"id\":3155,\"shortname\":\"FOUN1014 Semester 2, 2018\\/19\",\"fullname\":\"Critical Reading and Writing in Science & Technology and Medical Sciences\",\"enrolledusercount\":1024,\"idnumber\":\"FOUN10140\",\"visible\":1}]"
+				}
+			]
+		},
+		{
+			"name": "get forums",
+			"request": {
+				"url": {
+					"raw": "{{host}}/webservice/rest/server.php?wstoken={{token}}&wsfunction=mod_forum_get_forums_by_courses&moodlewsrestformat=json&courseids[0]={{course0}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "{{token}}",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_forum_get_forums_by_courses",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "courseids[0]",
+							"value": "{{course0}}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"description": null
+			},
+			"response": [
+				{
+					"id": "384a4870-b0ff-4be4-b0e1-d4845306d850",
+					"name": "get forums",
+					"originalRequest": {
+						"url": {
+							"raw": "{{host}}/webservice/rest/server.php?wstoken={{token}}&wsfunction=mod_forum_get_forums_by_courses&moodlewsrestformat=json&courseids[0]={{course0}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"webservice",
+								"rest",
+								"server.php"
+							],
+							"query": [
+								{
+									"key": "wstoken",
+									"value": "{{token}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "wsfunction",
+									"value": "mod_forum_get_forums_by_courses",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "moodlewsrestformat",
+									"value": "json",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "courseids[0]",
+									"value": "{{course0}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"description": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"name": "accept-ranges",
+							"key": "accept-ranges",
+							"value": "none",
+							"description": ""
+						},
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "private, must-revalidate, pre-check=0, post-check=0, max-age=0",
+							"description": ""
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": ""
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "906",
+							"description": ""
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": ""
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 18 Feb 2019 21:54:27 GMT",
+							"description": ""
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 01 Jan 1970 00:00:00 GMT",
+							"description": ""
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": ""
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": ""
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache",
+							"description": ""
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/5.5.9-1ubuntu4",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"responseTime": "988",
+					"body": "[{\"id\":9148,\"course\":\"607\",\"type\":\"news\",\"name\":\"News forum\",\"intro\":\"General news and announcements\",\"introformat\":1,\"assessed\":0,\"assesstimestart\":0,\"assesstimefinish\":0,\"scale\":0,\"maxbytes\":0,\"maxattachments\":1,\"forcesubscribe\":1,\"trackingtype\":1,\"rsstype\":0,\"rssarticles\":0,\"timemodified\":1484537462,\"warnafter\":0,\"blockafter\":0,\"blockperiod\":0,\"completiondiscussions\":0,\"completionreplies\":0,\"completionposts\":0,\"cmid\":169201},{\"id\":3526,\"course\":\"607\",\"type\":\"qanda\",\"name\":\"Question and Answer Forum\",\"intro\":\"<p><span>A forum for all your questions.<\\/span><\\/p>\",\"introformat\":1,\"assessed\":0,\"assesstimestart\":0,\"assesstimefinish\":0,\"scale\":0,\"maxbytes\":512000,\"maxattachments\":9,\"forcesubscribe\":1,\"trackingtype\":1,\"rsstype\":0,\"rssarticles\":0,\"timemodified\":1541045771,\"warnafter\":0,\"blockafter\":0,\"blockperiod\":0,\"completiondiscussions\":0,\"completionreplies\":0,\"completionposts\":0,\"cmid\":58766}]"
+				}
+			]
+		},
+		{
+			"name": "get members",
+			"request": {
+				"url": {
+					"raw": "{{host}}//webservice/rest/server.php?wstoken={{token}}&wsfunction=core_enrol_get_enrolled_users&moodlewsrestformat=json&courseid={{course0}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "{{token}}",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_enrol_get_enrolled_users",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "courseid",
+							"value": "{{course0}}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "get course content",
+			"request": {
+				"url": {
+					"raw": "{{host}}/webservice/rest/server.php?wstoken={{token}}&wsfunction=core_course_get_contents&moodlewsrestformat=json&courseid={{course0}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "{{token}}",
+							"equals": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_contents",
+							"equals": true
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"equals": true
+						},
+						{
+							"key": "courseid",
+							"value": "{{course0}}",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "get discussions",
+			"request": {
+				"url": {
+					"raw": "{{host}}/webservice/rest/server.php?wstoken={{token}}&wsfunction=mod_forum_get_forum_discussions&moodlewsrestformat=json&forumids[0]={{forum0}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "{{token}}",
+							"equals": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_forum_get_forum_discussions",
+							"equals": true
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"equals": true
+						},
+						{
+							"key": "forumids[0]",
+							"value": "{{forum0}}",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "get posts",
+			"request": {
+				"url": {
+					"raw": "{{host}}/webservice/rest/server.php?wstoken={{token}}&wsfunction=mod_forum_get_forum_discussion_posts&moodlewsrestformat=json&discussionid={{discussion0}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "{{token}}",
+							"equals": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_forum_get_forum_discussion_posts",
+							"equals": true
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"equals": true
+						},
+						{
+							"key": "discussionid",
+							"value": "{{discussion0}}",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "get events",
+			"request": {
+				"url": {
+					"raw": "{{host}}/webservice/rest/server.php?wstoken={{token}}&wsfunction=core_calendar_get_calendar_events&moodlewsrestformat=json&options[timeend]={{timeend}}&options[timestart]={{timestart}}&events[courseids][0]={{course0}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "{{token}}",
+							"equals": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_calendar_get_calendar_events",
+							"equals": true
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"equals": true
+						},
+						{
+							"key": "options[timeend]",
+							"value": "{{timeend}}",
+							"equals": true
+						},
+						{
+							"key": "options[timestart]",
+							"value": "{{timestart}}",
+							"equals": true
+						},
+						{
+							"key": "events[courseids][0]",
+							"value": "{{course0}}",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		}
+	]
+}
